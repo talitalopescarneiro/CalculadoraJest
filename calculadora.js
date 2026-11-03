@@ -11,7 +11,10 @@ function multiplicar(a,b){
 }
 
 function dividir(a,b){
-    return 0;
+  if (b ==0) {
+    return NaN;
+  }
+  return a / b;
 }
 
 module.exports = {somar, subtrair, multiplicar, dividir};
